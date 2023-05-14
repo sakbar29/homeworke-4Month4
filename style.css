@@ -1,0 +1,109 @@
+.registration-form {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #444;
+    font-weight: 600;
+  }
+  
+  .form-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f8f8f8;
+    margin-bottom: 0.5rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005ea6;
+  }
+  
+
+  @media (max-width: 480px) {
+    .registration-form {
+      max-width: 100%;
+    }
+  }
+
+  .registration-form {
+    position: relative;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0077cc;
+    background-color: #fff;
+  }
+  
+  .form-group input:invalid {
+    border-color: #f00;
+  }
+  
+  .form-group input[type="tel"] {
+
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 3rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-image: url('https://img.icons8.com/ios/50/000000/phone.png');
+  }
+  
+  .form-group input[type="email"] {
+
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 3rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-image: url('https://img.icons8.com/ios/50/000000/email.png');
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-group input[type="text"]:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-group input[type="text"]::placeholder {
+    color: #bbb;
+  }
+  
